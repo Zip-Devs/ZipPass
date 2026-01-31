@@ -1,0 +1,208 @@
+/* ===============================
+   Базовый стиль
+   =============================== */
+QWidget {
+    background-color: #1b1b1d;
+    color: #e6e6e6;
+    font-family: "Segoe UI";
+    font-size: 9.5pt;
+}
+
+/* ===============================
+   Кнопки
+   =============================== */
+QPushButton {
+    background-color: #2a2a2e;
+    border: 1px solid #3a3a3f;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #3a96dd;
+    border-color: #3a96dd;
+}
+
+QPushButton:pressed {
+    background-color: #2b7bbb;
+}
+
+QPushButton#PrimaryButton {
+    min-height: 32px;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+/* ===============================
+   Tool buttons (eye / copy / generate)
+   =============================== */
+QToolButton {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 4px 6px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+QToolButton:hover {
+    background-color: #2a2a2e;
+    border-color: #3a3a3f;
+}
+
+QToolButton:pressed {
+    background-color: #323238;
+}
+
+QToolButton:checked {
+    background-color: #3a96dd;
+    border-color: #3a96dd;
+    color: #ffffff;
+}
+
+/* ===============================
+   Поля ввода
+   =============================== */
+QLineEdit,
+QTextEdit {
+    background-color: #242426;
+    border: 1px solid #3a3a3f;
+    border-radius: 6px;
+    padding: 6px 10px;
+    min-height: 30px;
+    font-size: 10pt;
+}
+
+QLineEdit:focus,
+QTextEdit:focus {
+    border-color: #3a96dd;
+}
+
+/* Чтобы password + inline buttons выглядели как одно целое */
+QLineEdit {
+    padding-right: 6px;
+}
+
+/* ===============================
+   Заголовки
+   =============================== */
+QLabel#Title {
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+QLabel#SidebarTitle {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #cfcfcf;
+}
+
+/* ===============================
+   Sidebar
+   =============================== */
+QListWidget {
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+}
+
+QListWidget::item {
+    padding: 6px 10px;
+    margin: 2px 0;
+    border-radius: 6px;
+}
+
+QListWidget::item:selected {
+    background-color: #3a96dd;
+    color: #ffffff;
+}
+
+QListWidget::item:hover:!selected {
+    background-color: #2a2a2e;
+}
+
+/* ===============================
+   Таблица (QTreeView)
+   =============================== */
+QTreeView {
+    background-color: #232325;
+    border: 1px solid #2f2f33;
+    border-radius: 8px;
+    outline: none;
+}
+
+QTreeView::item {
+    padding: 4px 6px;
+}
+
+QTreeView::item:selected {
+    background-color: #3a96dd;
+    color: #ffffff;
+}
+
+QTreeView::item:hover:!selected {
+    background-color: #2b2b2f;
+}
+
+/* Заголовки колонок */
+QHeaderView::section {
+    background-color: #1f1f21;
+    color: #bdbdbd;
+    padding: 4px 6px;
+    border: none;
+    border-bottom: 1px solid #2f2f33;
+    font-weight: 500;
+}
+
+/* ===============================
+   Preview
+   =============================== */
+QWidget#Preview {
+    background-color: #202022;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QLabel#PreviewTitle {
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+/* ===============================
+   Scrollbar
+   =============================== */
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3a3a3f;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4a4a4f;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    height: 0;
+}
+
+/* ===============================
+   Password strength indicator
+   =============================== */
+QLabel[strength="weak"] {
+    color: #d16969;
+}
+
+QLabel[strength="medium"] {
+    color: #d7ba7d;
+}
+
+QLabel[strength="strong"] {
+    color: #6a9955;
+}

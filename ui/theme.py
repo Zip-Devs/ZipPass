@@ -1,0 +1,5 @@
+BG_MAIN   = "#1e1e1e"
+BG_PANEL  = "#252526"
+BG_ENTRY  = "#2d2d30"
+FG_TEXT   = "#e6e6e6"
+ACCENT    = "#3a96dd"
